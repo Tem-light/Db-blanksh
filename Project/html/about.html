@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../csspages/bootstrap.css" />
+    <link rel="stylesheet" href="../csspages/about.css" />
+    <title>Debre Birhen Blanket</title>
+  </head>
+  <body>
+    <header>
+      <div class="mh">
+        <p class="logo">Blanket</p>
+
+        <nav class="nav-links" id="nav">
+          <a href="./index.html">Home</a>
+          <a href="./about.html" class="active">About</a>
+          <a href="./reviews.html">Reviews</a>
+          <a href="./services.html">Services</a>
+          <a href="./product.html">Product</a>
+        </nav>
+        <div class="social-icons">
+          <a href="#"><img src="../images/telegram.png" alt="telegram" /></a>
+          <a href="#"
+            ><img src="../images/facebooklogo.png" alt="Facebook"
+          /></a>
+          <a href="#"><img src="../images/tiktok.png" alt="TIKTOK" /></a>
+          <a href="#"><img src="../images/whatsapp.png" alt="WHATSAPP" /></a>
+        </div>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+      </div>
+    </header>
+    <section style="background-color: white">
+      <div class="abouth1"><h1>About</h1></div>
+      <div class="container">
+        <div class="mom">
+          <div class="blanketshows">
+            <div class="im1">
+              <img src="../images/shocase1.png" onclick="functio(this)" />
+            </div>
+            <div class="im2">
+              <img src="../images/shocase2.jpg" onclick="functio(this)" />
+            </div>
+            <div class="im3">
+              <img src="../images/shocase3.jpg" onclick="functio(this)" />
+            </div>
+            <div class="im3">
+              <img src="../images/shocase4.jpg" onclick="functio(this)" />
+            </div>
+          </div>
+          <div class="display" id="imagebox">
+            <img src="../images/shocase1.png" alt="" />
+          </div>
+          <div class="description">
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden-Sydney College in Virginia, looked up one of
+              the more obscure Latin words, consectetur, from a Lorem Ipsum
+              passage, and going through the cites of the word in classical
+              literature, discovered the undoubtable source. Lorem Ipsum comes
+              from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+              Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
+              BC. This book is a treatise on the theory of ethics, very popular
+              during the Renaissance. The first line of Lorem Ipsum, "Lorem
+              ipsum dolor sit amet..", comes from a line in section 1.10.32. The
+              standard chunk of Lorem Ipsum used since the 1500s is reproduced
+              below for those interested. Sections 1.10.32 and 1.10.33 from "de
+              Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+              exact original form, accompanied by English versions from the 1914
+              translation by H. Rackham.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row cor">
+          <div class="infos col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <h1>Contact</h1>
+            <a href="#" class="contact-icon home">Debre berhan ethioipa</a>
+            <a href="#" class="contact-icon phone">+2519 10 10 10 10 </a>
+            <a href="#" class="contact-icon email">contact@gmail.com</a>
+          </div>
+          <div class="infos col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <h1>Get Help</h1>
+            <a href="#" class="center">FAQ</a>
+            <a href="#" class="center">Shipping</a>
+            <a href="#" class="center">Returns</a>
+            <a href="#" class="center">Payment Options</a>
+          </div>
+
+          <div class="infos col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <h1>Our Stores</h1>
+            <a href="#" class="center">Debre berhan</a>
+            <a href="#" class="center">Adiss ababa</a>
+            <a href="#" class="center">Hewassa</a>
+            <a href="#" class="center">Bahr dar</a>
+          </div>
+
+          <div class="infos col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <h1>Follow Us</h1>
+            <div class="social_link">
+              <a href="#"
+                ><img
+                  src="../images/telegram.png"
+                  alt="telegram"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../images/tiktok.png"
+                  alt="tiktok"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../images/facebooklogo.png"
+                  alt="facebook"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../images/whatsapp.png"
+                  alt="whatsapp"
+                  class="social-icon"
+              /></a>
+            </div>
+          </div>
+          <div class="infos col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <h1>Newsletter</h1>
+            <div class="search_bar">
+              <input type="text" placeholder="You email id here" />
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        document.getElementById("nav").classList.toggle("show");
+        const body = document.body;
+        body.classList.toggle("noscroll");
+      }
+      const imageBox = document.getElementById("imagebox");
+      const displayImage = imageBox.querySelector("img");
+      const images = document.querySelectorAll(".blanketshows img");
+      images.forEach((img) => {
+        img.addEventListener("click", function () {
+          displayImage.src = this.src;
+        });
+      });
+    </script>
+  </body>
+</html>

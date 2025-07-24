@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../csspages/bootstrap.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../csspages/services.css" />
+    <title>Debre Birhen Blanket</title>
+  </head>
+  <body>
+    <header>
+      <div class="mh">
+        <p class="logo">Blanket</p>
+
+        <nav class="nav-links" id="nav">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./reviews.html">Reviews</a>
+          <a href="./services.html" class="active">Services</a>
+          <a href="./product.html">Product</a>
+        </nav>
+        <div class="social-icons">
+          <a href="#"><img src="../images/telegram.png" alt="telegram" /></a>
+          <a href="#"
+            ><img src="../images/facebooklogo.png" alt="Facebook"
+          /></a>
+          <a href="#"><img src="../images/tiktok.png" alt="TIKTOK" /></a>
+          <a href="#"><img src="../images/whatsapp.png" alt="WHATSAPP" /></a>
+        </div>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+      </div>
+    </header>
+    <section class="service-section fluid-container">
+      <h1>SERVICES</h1>
+      <div class="row service-top">
+        <div class="service-sec col-lg-3 col-md-3 col-sm-4">
+          <i class="fa fa-truck-fast"></i>
+          <h4>Fast Delivery</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="service-sec col-lg-3 col-md-3 col-sm-4">
+          <i class="fa fa-rotate-left"></i>
+          <h4>10 Days Replacement</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="service-sec col-lg-3 col-md-3 col-sm-4">
+          <i class="fa fa-headset"></i>
+          <h4>24 x 7 Support</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="row service-bottum">
+        <div class="service-img col-lg-6 col-md-6 col-sm-12">
+          <img src="../images/serviceblan.png" alt="service image" />
+        </div>
+        <div class="service-form col-lg-6 col-md-6 col-sm-12">
+          <form action="post">
+            <h2>Welcome Back!</h2>
+
+            <p for="username">User Name</p>
+
+            <div class="form-input">
+              <br />
+              <i class="fa fa-user"></i>
+              <input type="text" placeholder="username" required />
+            </div>
+            <p for="password">password</p>
+
+            <div class="form-input">
+              <br />
+              <i class="fa fa-lock"></i>
+              <input type="password" placeholder="password" required />
+            </div>
+            <p class="forget">Forget Password ?</p>
+            <button type="submit">Login</button>
+            <div class="login-icon">
+              <a href="#"><img src="../images/facebookser.png" alt="" /></a>
+              <a href="3"><img src="../images/google.png" alt="" /></a>
+              <a href="#"><img src="../images/twitter.png" alt="" /></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="infos col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <h1>Contact</h1>
+            <a href="#" class="contact-icon home">Debre berhan ethioipa</a>
+            <a href="#" class="contact-icon phone">+2519 10 10 10 10 </a>
+            <a href="#" class="contact-icon email">contact@gmail.com</a>
+          </div>
+
+          <div class="infos col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <h1>Get Help</h1>
+            <a href="#" class="center">FAQ</a>
+            <a href="#" class="center">Shipping</a>
+            <a href="#" class="center">Returns</a>
+            <a href="#" class="center">Payment Options</a>
+          </div>
+
+          <div class="infos col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <h1>Our Stores</h1>
+            <a href="#" class="center">Debre berhan</a>
+            <a href="#" class="center">Adiss ababa</a>
+            <a href="#" class="center">Hewassa</a>
+            <a href="#" class="center">Bahr dar</a>
+          </div>
+
+          <div class="infos col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <h1>Follow Us</h1>
+            <div class="social_link">
+              <a href="#"
+                ><img
+                  src="../images/telegram.png"
+                  alt="telegram"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../images/tiktok.png"
+                  alt="tiktok"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../images/facebooklogo.png"
+                  alt="facebook"
+                  class="social-icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../images/whatsapp.png"
+                  alt="whatsapp"
+                  class="social-icon"
+              /></a>
+            </div>
+          </div>
+
+          <div class="infos col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+            <h1>Newsletter</h1>
+            <div class="search_bar">
+              <input type="text" placeholder="You email id here" />
+              <button type="submit">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        document.getElementById("nav").classList.toggle("show");
+        const body = document.body;
+        body.classList.toggle("noscroll");
+      }
+    </script>
+  </body>
+</html>
